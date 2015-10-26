@@ -93,14 +93,6 @@ VDFParse(const void *VDFData, long long length)
                         VDFValue *v = malloc(sizeof(VDFValue));
                         memset(v, 0, sizeof(VDFValue));
                         
-                        if (newNode == NULL) {
-                            printf("123123");
-                        }
-                        
-                        if (v == NULL) {
-                            printf("asdfasdfa");
-                        }
-                        
                         char *k = (char *)malloc(strlen(buffer)*sizeof(char));
                         strcpy(k, buffer);
                         newNode->k = k;
